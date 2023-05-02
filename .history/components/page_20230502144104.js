@@ -1,6 +1,7 @@
 import React from  'react'
 import styles from '@/styles/page.module.scss';
 import Header from '@/components/header'
+import Stories from '@/components/stories';
 
 const Page = ({children}) => {
     return (

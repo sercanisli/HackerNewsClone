@@ -1,7 +1,7 @@
 import React  from 'react'
 import Link from 'next/link'
 import styles from '@/styles/stories.module.scss';
-import Story from './story'
+
  
 const Stories = ({page=1, stories, offset=null, morePath='news', showMoreButton}) => {
     return (
