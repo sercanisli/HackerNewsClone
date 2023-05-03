@@ -17,39 +17,39 @@ export function getStaticPaths() {
   export async function getStaticProps({ params: { page = 1 } }) {
     try {
       page = Number(page);
-      const stories = await getStories('topstories', { page });
+      const stories = await getStories('newstories', { page });
   
       return {
         props: {
           stories,
           page
-        }
+        },
+        revalidate: 1
       }
-    } 
-    catch (err) {
+    } catch (err) {
       console.log({
         Error: err
       });
     }
+  
   }
   
-  const NewsList = ({
+  const Newest = ({
     page,
     stories
   }) => {
-    const offset = (page - 1) * 30;
     return (
-      <div>
+      <>
         <Page>
           <Stories
             stories={stories}
             page={page}
-            offset={offset}
             showMoreButton
+            morePath="newest"
           />
         </Page>
-      </div>
+      </>
     )
   }
   
-  export default NewsList
+  export default Newest

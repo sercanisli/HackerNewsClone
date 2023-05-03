@@ -1,10 +1,10 @@
 import getItem from '@/lib/get-item'
 import React, { useEffect, useState } from 'react'
-import getComments from '@/lib/get-comment'
+import getComments from '@/lib/getComments'
 
-export function getStaticPaths() {
+export function getStaticPaths(){
     return {
-        paths: [{
+        paths:[{
             params: {
                 id:'29001721'
             }
@@ -21,7 +21,8 @@ export async function getStaticProps({
 
 })
 {
-    const story = await getItem(id); 
+    const story = await getItem(id);
+    //linkten alınan id yi path yapısı ile birlikte veritabanından getiriyor. 
     return {
         props: {
             story
@@ -31,6 +32,7 @@ export async function getStaticProps({
 
 const News = ({story}) => {
     const [comments, setComments] = useState([])
+    //diğer tüm veri çekme isteklerini getStaticPropstan yaparken bu isteği useEffect ile yaptık sebebi server side da get item ile veriye ulaşıyoruz fakat bu işlem sayfaya ulaştıktan sonra oluyor önce değil.
     useEffect(() => {
         //getComments() API Request
         if(story)
@@ -41,7 +43,7 @@ const News = ({story}) => {
                 setComments(comments)
             })
             .catch(err => {
-                console.log({err});
+                console.log({err})
             })
         }
     }, [story])

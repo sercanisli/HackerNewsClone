@@ -1,10 +1,10 @@
 import getItem from '@/lib/get-item'
 import React, { useEffect, useState } from 'react'
-import getComments from '@/lib/get-comment'
+import getComments from '@/lib/getComments'
 
-export function getStaticPaths() {
+export function getStaticPaths(){
     return {
-        paths: [{
+        paths:[{
             params: {
                 id:'29001721'
             }
@@ -41,7 +41,7 @@ const News = ({story}) => {
                 setComments(comments)
             })
             .catch(err => {
-                console.log({err});
+                console.log({err})
             })
         }
     }, [story])

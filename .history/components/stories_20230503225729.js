@@ -11,14 +11,14 @@ const Stories = ({page=1, stories, offset=null, morePath='news', showMoreButton}
                     <div key={story.id} className={styles.item}>
                         {offset !== null ? (
                             <>
-                                <span className={styles.count}>
-                                    {offset + i + 1}
-                                </span>
+                            <span className={styles.count}>
+                                {offset + i + 1}
+                            </span>
                             </>
                         ) : null}
                         <Story
                             id={story.id}
-                            title={story.title}
+                            title={stories.title}
                             date={story.date}
                             url={story.url}
                             user={story.user}

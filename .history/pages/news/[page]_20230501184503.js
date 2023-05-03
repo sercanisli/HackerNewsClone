@@ -25,12 +25,12 @@ export function getStaticPaths() {
           page
         }
       }
-    } 
-    catch (err) {
+    } catch (err) {
       console.log({
         Error: err
       });
     }
+  
   }
   
   const NewsList = ({
