@@ -27,7 +27,10 @@ export const transform = (val) => {
 
 export async function observe(id, fn) {
     const val = (data) => fn(transform(data.val()));
+    //db bağlantısı
     const item = await db.child('item').child(id);
+    //value varsa
     item.on('value', val)
+    //bağlantıyı kesiyor.
     return () => item.off('value', val);
 }

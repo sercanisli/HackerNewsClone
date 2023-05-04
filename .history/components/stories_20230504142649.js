@@ -1,7 +1,7 @@
 import React  from 'react'
 import Link from 'next/link'
 import styles from '@/styles/stories.module.scss';
-import UpdatedStory from '@/components/updated-story.js'
+import Story from '@/components/updated-story.js'
  
 const Stories = ({page=1, stories, offset=null, morePath='news', showMoreButton}) => {
     return (
@@ -16,7 +16,7 @@ const Stories = ({page=1, stories, offset=null, morePath='news', showMoreButton}
                                 </span>
                             </>
                         ) : null}
-                        <UpdatedStory
+                        <Story
                             id={story.id}
                             title={story.title}
                             date={story.date}

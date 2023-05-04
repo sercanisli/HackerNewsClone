@@ -1,8 +1,6 @@
 import getItem from '@/lib/get-item'
 import React, { useEffect, useState } from 'react'
 import getComments from '@/lib/get-comment'
-import Item from '@/components/item.js';
-import Page from '@/components/page.js'
 
 export function getStaticPaths() {
     return {
@@ -50,10 +48,7 @@ const News = ({story}) => {
 
   return (
     <Page>
-        <Item
-            story={story}
-            comments={comments}
-        />
+        {/* <Item/> */}
     </Page>
   )
 }
