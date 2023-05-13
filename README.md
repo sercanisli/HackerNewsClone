@@ -1,7 +1,33 @@
 This project is a clone application developed with Next.js technology that I learned at the front-end Bootcamp given by TechCareer. 
 
 
+1-) Home Page;
+![Home Page](https://github.com/sercanisli/HackerNewsClone/assets/128610192/3cefdc93-1466-4d81-ade9-10fafb1ff7a0)
 
+
+
+2-)Clicking on the 'new' tab
+![clicking on the new tab](https://github.com/sercanisli/HackerNewsClone/assets/128610192/e6b0b165-1edb-4449-9fa0-800701526389)
+
+
+
+3-)Clicking on the 'show' tab
+![clicking on the show tab](https://github.com/sercanisli/HackerNewsClone/assets/128610192/48ab507b-4e99-48fc-b9a3-f4362c0c9c84)
+
+
+
+4-)Clicking on the 'jobs' tab
+![clicking on the jobs tab](https://github.com/sercanisli/HackerNewsClone/assets/128610192/461f36ac-6eb3-4764-858c-642b97fb888c)
+
+
+
+5-)Clicking on the comments
+![Clicking on the comments](https://github.com/sercanisli/HackerNewsClone/assets/128610192/3f53a56e-e94e-4cf6-a30a-d2cc1eb9e53b)
+
+
+
+6-) Clicking after more button
+![clicking after more button](https://github.com/sercanisli/HackerNewsClone/assets/128610192/cb46ccfb-6ead-4c1e-99d0-8918b87fa892)
 
 
 
